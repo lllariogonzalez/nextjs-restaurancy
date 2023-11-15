@@ -4,8 +4,10 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Restaurancy",
-};
+  title: 'Restaurancy - Next.js App',
+  description: 'The best restaurants in the world',
+  keywords: ['restaurant', 'food', 'eat', 'dinner', 'lunch'],
+}
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
