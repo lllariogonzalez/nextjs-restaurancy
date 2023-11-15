@@ -1,4 +1,5 @@
 import { Restaurant } from "@/api";
+import Link from "next/link";
 
 export default function RestaurantCard({restaurant}: {restaurant: Restaurant}){
   return (
@@ -9,7 +10,7 @@ export default function RestaurantCard({restaurant}: {restaurant: Restaurant}){
         src={restaurant.image}
       />
       <h2 className="inline-flex gap-2 text-lg font-bold">
-        <span>{restaurant.name}</span>
+        <Link href={`/${restaurant.id}`}>{restaurant.name}</Link>
         <small className="inline-flex gap-1">
           <span>⭐</span>
           <span>{restaurant.score}</span>
