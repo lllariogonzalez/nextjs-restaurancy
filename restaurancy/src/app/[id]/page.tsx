@@ -1,5 +1,5 @@
 import api from "@/api";
-import RestaurantCard from "../components/RestaurantCard";
+import RestaurantCard from "../(index)/components/RestaurantCard";
 
 export async function generateMetadata({params: {id}}: {params: {id: string}}) {
   const restaurant = await api.fetch(id);
