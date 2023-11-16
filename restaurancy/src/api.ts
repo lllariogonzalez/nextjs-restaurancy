@@ -164,7 +164,7 @@ const api = {
     const results = await api.list().then((restaurants) =>
       // Los filtramos por nombre
       restaurants.filter((restaurant) =>
-        restaurant.name.toLowerCase().includes(query.toLowerCase()),
+        restaurant.name.toLowerCase().includes(query?.toLowerCase() ?? ''),
       ),
     );
 
