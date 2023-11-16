@@ -1,4 +1,4 @@
-import { Restaurant } from "@/api";
+import { Restaurant } from "@/types";
 import Link from "next/link";
 import { DynamicFavoriteButton } from "./FavoriteButton";
 
